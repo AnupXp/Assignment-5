@@ -1,0 +1,18 @@
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+.font-raleway{
+    font-family: "Raleway", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* banner image */
+.bg{
+    background-image: url(../images/banner.png);
+}
+.primary-btn{
+    background-color: rgb(29,209,0);
+    border: none;
+}
