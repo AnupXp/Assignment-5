@@ -279,51 +279,219 @@
               </div>
             </div>
             <div class="flex flex-row gap-[134px]">
-                <!-- route section -->
-            <div
-            class="w-[785px] h-[258px] bg-[rgb(247,248,248)] rounded-3xl mt-[50px] ml-6 mb-[32px]"
-          >
-            <div
-              class="flex flex-row justify-between pt-6 pb-[24px] font-raleway font-[600] text-[18px]"
-            >
-              <h3 class="text-[rgba(3,7,18,0.6)] pl-8">Route</h3>
-              <h2 class="text-[rgb(3,7,18)] pr-8">Dhaka-Sylhet</h2>
-            </div>
-            <div
-              class="flex flex-row justify-between pt-5 pb-[24px] font-raleway font-[600] text-[18px] border-y-2 border-dashed"
-            >
-              <h3 class="text-[rgba(3,7,18,0.6)] pl-8">Departure Time</h3>
-              <h2 class="text-[rgb(3,7,18)] pr-8">09:00 PM</h2>
-            </div>
-            <!-- others location -->
-            <div class="flex flex-row justify-evenly pt-5 pb-8">
-              <button
-                class="bg-[rgba(3,7,18,0.05)] rounded-xl w-[232px] text-[16px] text-rgba(3,7,18,0.8) font-[500] font-inter px-4 py-[18px]"
+              <!-- route section -->
+              <div
+                class="w-[785px] h-[258px] bg-[rgb(247,248,248)] rounded-3xl mt-[50px] ml-6 mb-[32px]"
               >
-                Boarding Point - Laxmipur
-              </button>
-              <button
-                class="bg-[rgba(3,7,18,0.05)] rounded-[12px] w-[232px] text-[16px] text-rgba(3,7,18,0.8) font-[500] font-inter px-4 py-[18px]"
-              >
-                Dropping Point - Bogura
-              </button>
-              <button
-                class="bg-[rgba(3,7,18,0.05)] rounded-[12px] w-[232px] text-[16px] text-rgba(3,7,18,0.8) font-[500] font-inter px-4 py-[18px]"
-              >
-                Est. Time - 11 Hour
-              </button>
+                <div
+                  class="flex flex-row justify-between pt-6 pb-[24px] font-raleway font-[600] text-[18px]"
+                >
+                  <h3 class="text-[rgba(3,7,18,0.6)] pl-8">Route</h3>
+                  <h2 class="text-[rgb(3,7,18)] pr-8">Dhaka-Sylhet</h2>
+                </div>
+                <div
+                  class="flex flex-row justify-between pt-5 pb-[24px] font-raleway font-[600] text-[18px] border-y-2 border-dashed"
+                >
+                  <h3 class="text-[rgba(3,7,18,0.6)] pl-8">Departure Time</h3>
+                  <h2 class="text-[rgb(3,7,18)] pr-8">09:00 PM</h2>
+                </div>
+                <!-- others location -->
+                <div class="flex flex-row justify-evenly pt-5 pb-8">
+                  <button
+                    class="bg-[rgba(3,7,18,0.05)] rounded-xl w-[232px] text-[16px] text-rgba(3,7,18,0.8) font-[500] font-inter px-4 py-[18px]"
+                  >
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button
+                    class="bg-[rgba(3,7,18,0.05)] rounded-[12px] w-[232px] text-[16px] text-rgba(3,7,18,0.8) font-[500] font-inter px-4 py-[18px]"
+                  >
+                    Dropping Point - Bogura
+                  </button>
+                  <button
+                    class="bg-[rgba(3,7,18,0.05)] rounded-[12px] w-[232px] text-[16px] text-rgba(3,7,18,0.8) font-[500] font-inter px-4 py-[18px]"
+                  >
+                    Est. Time - 11 Hour
+                  </button>
+                </div>
+              </div>
+              <div class="pr-[65px] flex flex-col items-center pt-[80px]">
+                <img src="./images/fare.png" alt="" />
+                <h1
+                  class="text-[#030712] text-[24px] font-inter font-[600] pt-6"
+                >
+                  550 Taka
+                </h1>
+                <h3
+                  class="text-[rgba(3,7,18,0.6)] text-[20px] font-inter font-[400]"
+                >
+                  Per Seat
+                </h3>
+              </div>
             </div>
           </div>
-          <div class="pr-[65px] flex flex-col items-center pt-[80px]">
-              <img src="./images/fare.png" alt="" />
-              <h1 class="text-[#030712] text-[24px] font-inter font-[600] pt-6">550 Taka</h1>
-              <h3 class="text-[rgba(3,7,18,0.6)] text-[20px] font-inter font-[400]">Per Seat</h3>
+        </div>
+        <!-- seat and customer info main container -->
+        <div class="mt-[26px]">
+          <div
+            class="w-[1170px] h-[1100px] bg-[rgb(255,255,255)] rounded-[24px] mx-auto flex"
+          >
+            <!-- seat selection container -->
+            <div class="pt-6 pl-8 w-[674px]">
+              <h1
+                class="font-raleway font-[600] text-[24px] text-[rgb(3,7,18)] pt-8 pl-8 pb-6"
+              >
+                Select Your Seat
+              </h1>
+              <div
+                class="w-[609px] flex flex-row justify-between border-y-2 border-dashed py-[18px]"
+              >
+                <div class="flex flex-row">
+                  <img src="./images/seat-gray.png" alt="" />
+                  <p>Available</p>
+                </div>
+                <div class="flex flex-row">
+                  <img src="./images/seat-green-filled.png" alt="" />
+                  <p>Selected</p>
+                </div>
+              </div>
+              <!-- bus seats-------------------/ -->
+              <div
+                class="flex flex-row gap-[50px] pt-6 border-r-2 border-[rgba(3,7,18,0.3)] border-dashed"
+              >
+                <div class="flex flex-col-3 gap-[32px]">
+                  <div class="flex flex-col justify-center gap-[24px] mt-[80px]">
+                    <p class="btn bg-white border-none h-[56px]">A</p>
+                    <p class="btn bg-white border-none h-[56px]">B</p>
+                    <p class="btn bg-white border-none h-[56px]">C</p>
+                    <p class="btn bg-white border-none h-[56px]">D</p>
+                    <p class="btn bg-white border-none h-[56px]">E</p>
+                    <p class="btn bg-white border-none h-[56px]">F</p>
+                    <p class="btn bg-white border-none h-[56px]">G</p>
+                    <p class="btn bg-white border-none h-[56px]">H</p>
+                    <p class="btn bg-white border-none h-[56px]">I</p>
+                    <p class="btn bg-white border-none h-[56px]">J</p>
+                  </div>
+                  <div class="flex flex-col gap-[24px] mt-[80px]">
+                    <button class="btn w-[110px] h-[56px]">A1</button>
+                    <button class="btn w-[110px] h-[56px]">B1</button>
+                    <button class="btn w-[110px] h-[56px]">C1</button>
+                    <button class="btn w-[110px] h-[56px]">D1</button>
+                    <button class="btn w-[110px] h-[56px]">E1</button>
+                    <button class="btn w-[110px] h-[56px]">F1</button>
+                    <button class="btn w-[110px] h-[56px]">G1</button>
+                    <button class="btn w-[110px] h-[56px]">H1</button>
+                    <button class="btn w-[110px] h-[56px]">I1</button>
+                    <button class="btn w-[110px] h-[56px]">J1</button>
+                  </div>
+                  <div class="flex flex-col gap-[24px] mt-[80px]">
+                    <button class="btn w-[110px] h-[56px]">A2</button>
+                    <button class="btn w-[110px] h-[56px]">B2</button>
+                    <button class="btn w-[110px] h-[56px]">C2</button>
+                    <button class="btn w-[110px] h-[56px]">D2</button>
+                    <button class="btn w-[110px] h-[56px]">E2</button>
+                    <button class="btn w-[110px] h-[56px]">F2</button>
+                    <button class="btn w-[110px] h-[56px]">G2</button>
+                    <button class="btn w-[110px] h-[56px]">H2</button>
+                    <button class="btn w-[110px] h-[56px]">I2</button>
+                    <button class="btn w-[110px] h-[56px]">J2</button>
+                  </div>
+                </div>
+                <div class="flex flex-col-3 gap-[32px]">
+                  <div class="flex flex-col gap-[24px] mt-[80px]">
+                    <button class="btn w-[110px] h-[56px]">A3</button>
+                    <button class="btn w-[110px] h-[56px]">B3</button>
+                    <button class="btn w-[110px] h-[56px]">C3</button>
+                    <button class="btn w-[110px] h-[56px]">D3</button>
+                    <button class="btn w-[110px] h-[56px]">E3</button>
+                    <button class="btn w-[110px] h-[56px]">F3</button>
+                    <button class="btn w-[110px] h-[56px]">G1</button>
+                    <button class="btn w-[110px] h-[56px]">H3</button>
+                    <button class="btn w-[110px] h-[56px]">I3</button>
+                    <button class="btn w-[110px] h-[56px]">J3</button>
+                  </div>
+                  <div class="flex flex-col gap-[24px]">
+                    <button class="btn w-[110px] h-[56px]"><img src="./images/Vector.png" alt=""></button>
+                    <button class="btn w-[110px] h-[56px]">A4</button>
+                    <button class="btn w-[110px] h-[56px]">B4</button>
+                    <button class="btn w-[110px] h-[56px]">C4</button>
+                    <button class="btn w-[110px] h-[56px]">D4</button>
+                    <button class="btn w-[110px] h-[56px]">E4</button>
+                    <button class="btn w-[110px] h-[56px]">F4</button>
+                    <button class="btn w-[110px] h-[56px]">G4</button>
+                    <button class="btn w-[110px] h-[56px]">H4</button>
+                    <button class="btn w-[110px] h-[56px]">I4</button>
+                    <button class="btn w-[110px] h-[56px]">J4</button>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- price and coupon info -->
+            <div class="w-[433px] px-8">
+              <h1
+                class="font-raleway font-[600] text-[24px] text-[rgb(3,7,18)] pt-14 pl-8 pb-6 border-b-2 border-dashed"
+              >
+                Select Your Seat
+              </h1>
+              <div class="w-[433px] bg-[rgb(247,248,248)] rounded-[12px] mt-6">
+                <div
+                  class="font-inter font-[500] text-[16px] text-[rgb(3,7,18)] flex flex-row justify-between pt-8 px-8 border-b-2 border-dashed pb-4"
+                >
+                  <h3>
+                    Seat
+                    <span
+                      class="bg-[rgb(29,209,0)] px-[8px] pt-[6px] rounded-[5px] text-white font-inter font-[700] text-[12px]"
+                      ><sup>2</sup></span
+                    >
+                  </h3>
+                  <h3>Class</h3>
+                  <h3>Price</h3>
+                </div>
+                <div class="flex flex-row justify-between py-4 px-8">
+                  <p class="font-inter text-[rgba(3,7,18,0.6)]">C1</p>
+                  <p class="font-inter text-[rgba(3,7,18,0.6)]">Economy</p>
+                  <p class="font-inter text-[rgba(3,7,18,0.6)]">550</p>
+                </div>
+                <div class="flex flex-row justify-between py-4 px-8 border-b-2">
+                  <p class="font-inter text-[rgba(3,7,18,0.6)]">C2</p>
+                  <p class="font-inter text-[rgba(3,7,18,0.6)]">Economy</p>
+                  <p class="font-inter text-[rgba(3,7,18,0.6)]">550</p>
+                </div>
+                <div class="flex flex-row justify-between py-4 px-8">
+                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">Total</p>
+                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">1100</p>
+                </div>
+                <div class="flex justify-center relative pb-6">
+                  <div>
+                    <input class="w-[369px] p-[20px] bg-white rounded-xl font-inter text-[14px]" type="text" placeholder="Have Any Coupon">
+                  </div>
+                  <button class="btn primary-btn absolute right-10 top-[8px] font-inter">Apply</button>
+                </div>
+                <div class="flex flex-row justify-between pb-8 px-8">
+                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">Total</p>
+                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">1100</p>
+                </div>
+              </div>
+              <!-- customer input -->
+              <div class="w-[433px] my-8">
+                <h1 class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4">Passenger Name<sup>*</sup></h1>
+                <input class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6" type="text" placeholder="Enter Your Name">
+                <h1 class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4">Phone Number<sup>*</sup></h1>
+                <input class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6" type="tel" placeholder="Enter your phone number">
+                <h1 class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4">Email ID</h1>
+                <input class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6" type="email" placeholder="Enter your email id">
+                <button class="btn primary-btn w-full font-raleway font-[800] text-[20px] text-white">Next</button>
+              </div>
+              <div class="flex flex-row justify-evenly w-[433px]">
+                <p class="font-inter text-[16px] text-[rgba(3,7,18,0.6)] underline">Terms and Conditions</p>
+                <p class="font-inter text-[16px] text-[rgba(3,7,18,0.6)] underline">Cancellation Policy</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
 </html>

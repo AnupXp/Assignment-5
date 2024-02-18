@@ -15,4 +15,5 @@ body{
 .primary-btn{
     background-color: rgb(29,209,0);
     border: none;
+    color: white;
 }
