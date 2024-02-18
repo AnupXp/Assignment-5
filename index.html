@@ -359,7 +359,9 @@
                 class="flex flex-row gap-[50px] pt-6 border-r-2 border-[rgba(3,7,18,0.3)] border-dashed"
               >
                 <div class="flex flex-col-3 gap-[32px]">
-                  <div class="flex flex-col justify-center gap-[24px] mt-[80px]">
+                  <div
+                    class="flex flex-col justify-center gap-[24px] mt-[80px]"
+                  >
                     <p class="btn bg-white border-none h-[56px]">A</p>
                     <p class="btn bg-white border-none h-[56px]">B</p>
                     <p class="btn bg-white border-none h-[56px]">C</p>
@@ -410,7 +412,9 @@
                     <button class="btn w-[110px] h-[56px]">J3</button>
                   </div>
                   <div class="flex flex-col gap-[24px]">
-                    <button class="btn w-[110px] h-[56px]"><img src="./images/Vector.png" alt=""></button>
+                    <button class="btn w-[110px] h-[56px]">
+                      <img src="./images/Vector.png" alt="" />
+                    </button>
                     <button class="btn w-[110px] h-[56px]">A4</button>
                     <button class="btn w-[110px] h-[56px]">B4</button>
                     <button class="btn w-[110px] h-[56px]">C4</button>
@@ -462,9 +466,17 @@
                 </div>
                 <div class="flex justify-center relative pb-6">
                   <div>
-                    <input class="w-[369px] p-[20px] bg-white rounded-xl font-inter text-[14px]" type="text" placeholder="Have Any Coupon">
+                    <input
+                      class="w-[369px] p-[20px] bg-white rounded-xl font-inter text-[14px]"
+                      type="text"
+                      placeholder="Have Any Coupon"
+                    />
                   </div>
-                  <button class="btn primary-btn absolute right-10 top-[8px] font-inter">Apply</button>
+                  <button
+                    class="btn primary-btn absolute right-10 top-[8px] font-inter"
+                  >
+                    Apply
+                  </button>
                 </div>
                 <div class="flex flex-row justify-between pb-8 px-8">
                   <p class="font-inter text-[rgb(3,7,18)] font-[500]">Total</p>
@@ -473,17 +485,53 @@
               </div>
               <!-- customer input -->
               <div class="w-[433px] my-8">
-                <h1 class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4">Passenger Name<sup>*</sup></h1>
-                <input class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6" type="text" placeholder="Enter Your Name">
-                <h1 class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4">Phone Number<sup>*</sup></h1>
-                <input class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6" type="tel" placeholder="Enter your phone number">
-                <h1 class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4">Email ID</h1>
-                <input class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6" type="email" placeholder="Enter your email id">
-                <button class="btn primary-btn w-full font-raleway font-[800] text-[20px] text-white">Next</button>
+                <h1
+                  class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4"
+                >
+                  Passenger Name<sup>*</sup>
+                </h1>
+                <input
+                  class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6"
+                  type="text"
+                  placeholder="Enter Your Name"
+                />
+                <h1
+                  class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4"
+                >
+                  Phone Number<sup>*</sup>
+                </h1>
+                <input
+                  class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6"
+                  type="tel"
+                  placeholder="Enter your phone number"
+                />
+                <h1
+                  class="font-inter font-[600] text-[16px] text-[rgb(3,7,18)] pb-4"
+                >
+                  Email ID
+                </h1>
+                <input
+                  class="w-full p-[20px] bg-white rounded-xl font-inter text-[16px] border mb-6"
+                  type="email"
+                  placeholder="Enter your email id"
+                />
+                <button
+                  class="btn primary-btn w-full font-raleway font-[800] text-[20px] text-white"
+                >
+                  Next
+                </button>
               </div>
               <div class="flex flex-row justify-evenly w-[433px]">
-                <p class="font-inter text-[16px] text-[rgba(3,7,18,0.6)] underline">Terms and Conditions</p>
-                <p class="font-inter text-[16px] text-[rgba(3,7,18,0.6)] underline">Cancellation Policy</p>
+                <p
+                  class="font-inter text-[16px] text-[rgba(3,7,18,0.6)] underline"
+                >
+                  Terms and Conditions
+                </p>
+                <p
+                  class="font-inter text-[16px] text-[rgba(3,7,18,0.6)] underline"
+                >
+                  Cancellation Policy
+                </p>
               </div>
             </div>
           </div>
@@ -491,7 +539,48 @@
       </section>
     </main>
     <footer>
-      
+      <div class="w-1440px h-[457px] bg-[rgb(3,7,18)]">
+        <div
+          class="w-[1170px] flex flex-row justify-between mx-auto pt-[120px] border-b-2 border-dashed border-[rgba(255,255,255,0.3)] pb-12"
+        >
+          <div>
+            <h1
+              class="font-raleway font-[800] text-[36px] text-[rgb(255,255,255)]"
+            >
+              P-Ticket
+            </h1>
+            <p
+              class="font-inter font-[400] text-[18px] text-[rgba(255,255,255,0.8)]"
+            >
+              P-Ticket is a digital platform to make your <br />
+              daily commuting better.
+            </p>
+          </div>
+          <div>
+            <h1
+              class="font-raleway font-[600] text-[20px] text-[rgb(255,255,255)] pb-[20px]"
+            >
+              Download our app
+            </h1>
+            <button class="flex border rounded-lg p-2 gap-2">
+              <img src="./images/playstore.png" alt="" />
+              <img src="./images/Group.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="w-[1170px] flex justify-between mx-auto mt-8">
+          <p class="font-inter text-[16px] text-[rgba(255,255,255,0.7)]">
+            @all rights reserved, P-Ticket services limited.2024
+          </p>
+          <div
+            class="font-inter font-[500] text-[16] text-[rgb(255,255,255)] flex flex-row gap-8"
+          >
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
