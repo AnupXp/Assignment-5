@@ -50,15 +50,15 @@ function addBooking(id) {
   }
 }
 // discount and coupon
-function discountCalculation  (discount) {
+function discountCalculation(discount) {
   document.getElementById("coupon_div").style.display = "none";
   const getPrice = document.getElementById("total_price").innerText;
   const totalPrice = parseInt(getPrice);
   const grand = totalPrice - (parseInt(discount) * totalPrice) / 100;
   document.getElementById("grand_total").innerText = grand;
-};
+}
 
-function applyCoupon(){
+function applyCoupon() {
   const getCoupon = document.getElementById("coupon_code").value;
   if (getCoupon === "NEW15") {
     discountCalculation(15);
@@ -66,16 +66,23 @@ function applyCoupon(){
   if (getCoupon === "Couple 20") {
     discountCalculation(20);
   }
-};
-function buy(){
-  // hide header main and footer section
-  const header=document.getElementById('header')
-  header.classList.add('hidden')
-  const main=document.getElementById('main')
-  main.classList.add('hidden')
-  const footer=document.getElementById('footer')
-  footer.classList.add('hidden')
-  // remove successful part
-  const success=document.getElementById('done')
-  success.classList.remove('hidden')
+}
+function buy(event) {
+  event.preventDefault();
+  const seatBooking = document.getElementsByClassName("seatName");
+  const bookingLength = seatBooking.length;
+  if (bookingLength === 0) {
+    alert("Please select a seat !!!");
+  } else {
+    // hide header main and footer section
+    const header = document.getElementById("header");
+    header.classList.add("hidden");
+    const main = document.getElementById("main");
+    main.classList.add("hidden");
+    const footer = document.getElementById("footer");
+    footer.classList.add("hidden");
+    // remove successful part
+    const success = document.getElementById("done");
+    success.classList.remove("hidden");
+  }
 }
