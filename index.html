@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="ml-[133px] mr-[134px] mt-[48px]">
+    <header id="header" class="ml-[133px] mr-[134px] mt-[48px]">
       <!-- nav section  -->
       <section>
         <div class="navbar bg-base-100">
@@ -152,7 +152,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main id="main" class="">
       <!-- Coupon section -->
       <section class="mt-[120px]">
         <h1
@@ -271,10 +271,12 @@
               <!-- button available seat -->
               <div class="pt-[40px]">
                 <button class="btn bg-[rgba(29,209,0,0.15)]">
-                  <img src="./images/seat-green.png" alt="" /><span
+                  <img src="./images/seat-green.png" alt="" />
+                  <p
                     class="font-inter font-[500] text-[18px] text-[rgb(29,209,0)]"
-                    >40 seats left</span
                   >
+                    <span id="total_seat">40</span> seats left
+                  </p>
                 </button>
               </div>
             </div>
@@ -374,57 +376,297 @@
                     <p class="btn bg-white border-none h-[56px]">J</p>
                   </div>
                   <div class="flex flex-col gap-[24px] mt-[80px]">
-                    <button class="btn w-[110px] h-[56px]">A1</button>
-                    <button class="btn w-[110px] h-[56px]">B1</button>
-                    <button class="btn w-[110px] h-[56px]">C1</button>
-                    <button class="btn w-[110px] h-[56px]">D1</button>
-                    <button class="btn w-[110px] h-[56px]">E1</button>
-                    <button class="btn w-[110px] h-[56px]">F1</button>
-                    <button class="btn w-[110px] h-[56px]">G1</button>
-                    <button class="btn w-[110px] h-[56px]">H1</button>
-                    <button class="btn w-[110px] h-[56px]">I1</button>
-                    <button class="btn w-[110px] h-[56px]">J1</button>
+                    <button
+                      onclick="clickEvent('A1')"
+                      id="A1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      A1
+                    </button>
+                    <button
+                      onclick="clickEvent('B1')"
+                      id="B1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      B1
+                    </button>
+                    <button
+                      onclick="clickEvent('C1')"
+                      id="C1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      C1
+                    </button>
+                    <button
+                      onclick="clickEvent('D1')"
+                      id="D1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      D1
+                    </button>
+                    <button
+                      onclick="clickEvent('E1')"
+                      id="E1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      E1
+                    </button>
+                    <button
+                      onclick="clickEvent('F1')"
+                      id="F1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      F1
+                    </button>
+                    <button
+                      onclick="clickEvent('G1')"
+                      id="G1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      G1
+                    </button>
+                    <button
+                      onclick="clickEvent('H1')"
+                      id="H1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      H1
+                    </button>
+                    <button
+                      onclick="clickEvent('I1')"
+                      id="I1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      I1
+                    </button>
+                    <button
+                      onclick="clickEvent('J1')"
+                      id="J1"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      J1
+                    </button>
                   </div>
                   <div class="flex flex-col gap-[24px] mt-[80px]">
-                    <button class="btn w-[110px] h-[56px]">A2</button>
-                    <button class="btn w-[110px] h-[56px]">B2</button>
-                    <button class="btn w-[110px] h-[56px]">C2</button>
-                    <button class="btn w-[110px] h-[56px]">D2</button>
-                    <button class="btn w-[110px] h-[56px]">E2</button>
-                    <button class="btn w-[110px] h-[56px]">F2</button>
-                    <button class="btn w-[110px] h-[56px]">G2</button>
-                    <button class="btn w-[110px] h-[56px]">H2</button>
-                    <button class="btn w-[110px] h-[56px]">I2</button>
-                    <button class="btn w-[110px] h-[56px]">J2</button>
+                    <button
+                      onclick="clickEvent('A2')"
+                      id="A2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      A2
+                    </button>
+                    <button
+                      onclick="clickEvent('B2')"
+                      id="B2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      B2
+                    </button>
+                    <button
+                      onclick="clickEvent('C2')"
+                      id="C2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      C2
+                    </button>
+                    <button
+                      onclick="clickEvent('D2')"
+                      id="D2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      D2
+                    </button>
+                    <button
+                      onclick="clickEvent('E2')"
+                      id="E2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      E2
+                    </button>
+                    <button
+                      onclick="clickEvent('F2')"
+                      id="F2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      F2
+                    </button>
+                    <button
+                      onclick="clickEvent('G2')"
+                      id="G2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      G2
+                    </button>
+                    <button
+                      onclick="clickEvent('H2')"
+                      id="H2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      H2
+                    </button>
+                    <button
+                      onclick="clickEvent('I2')"
+                      id="I2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      I2
+                    </button>
+                    <button
+                      onclick="clickEvent('J2')"
+                      id="J2"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      J2
+                    </button>
                   </div>
                 </div>
                 <div class="flex flex-col-3 gap-[32px]">
                   <div class="flex flex-col gap-[24px] mt-[80px]">
-                    <button class="btn w-[110px] h-[56px]">A3</button>
-                    <button class="btn w-[110px] h-[56px]">B3</button>
-                    <button class="btn w-[110px] h-[56px]">C3</button>
-                    <button class="btn w-[110px] h-[56px]">D3</button>
-                    <button class="btn w-[110px] h-[56px]">E3</button>
-                    <button class="btn w-[110px] h-[56px]">F3</button>
-                    <button class="btn w-[110px] h-[56px]">G1</button>
-                    <button class="btn w-[110px] h-[56px]">H3</button>
-                    <button class="btn w-[110px] h-[56px]">I3</button>
-                    <button class="btn w-[110px] h-[56px]">J3</button>
+                    <button
+                      onclick="clickEvent('A3')"
+                      id="A3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      A3
+                    </button>
+                    <button
+                      onclick="clickEvent('B3')"
+                      id="B3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      B3
+                    </button>
+                    <button
+                      onclick="clickEvent('C3')"
+                      id="C3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      C3
+                    </button>
+                    <button
+                      onclick="clickEvent('D3')"
+                      id="D3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      D3
+                    </button>
+                    <button
+                      onclick="clickEvent('E3')"
+                      id="E3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      E3
+                    </button>
+                    <button
+                      onclick="clickEvent('F3')"
+                      id="F3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      F3
+                    </button>
+                    <button
+                      onclick="clickEvent('G3')"
+                      id="G3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      G1
+                    </button>
+                    <button
+                      onclick="clickEvent('H3')"
+                      id="H3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      H3
+                    </button>
+                    <button
+                      onclick="clickEvent('I3')"
+                      id="I3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      I3
+                    </button>
+                    <button
+                      onclick="clickEvent('J3')"
+                      id="J3"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      J3
+                    </button>
                   </div>
                   <div class="flex flex-col gap-[24px]">
                     <button class="btn w-[110px] h-[56px]">
                       <img src="./images/Vector.png" alt="" />
                     </button>
-                    <button class="btn w-[110px] h-[56px]">A4</button>
-                    <button class="btn w-[110px] h-[56px]">B4</button>
-                    <button class="btn w-[110px] h-[56px]">C4</button>
-                    <button class="btn w-[110px] h-[56px]">D4</button>
-                    <button class="btn w-[110px] h-[56px]">E4</button>
-                    <button class="btn w-[110px] h-[56px]">F4</button>
-                    <button class="btn w-[110px] h-[56px]">G4</button>
-                    <button class="btn w-[110px] h-[56px]">H4</button>
-                    <button class="btn w-[110px] h-[56px]">I4</button>
-                    <button class="btn w-[110px] h-[56px]">J4</button>
+                    <button
+                      onclick="clickEvent('A4')"
+                      id="A4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      A4
+                    </button>
+                    <button
+                      onclick="clickEvent('B4')"
+                      id="B4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      B4
+                    </button>
+                    <button
+                      onclick="clickEvent('C4')"
+                      id="C4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      C4
+                    </button>
+                    <button
+                      onclick="clickEvent('D4')"
+                      id="D4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      D4
+                    </button>
+                    <button
+                      onclick="clickEvent('E4')"
+                      id="E4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      E4
+                    </button>
+                    <button
+                      onclick="clickEvent('F4')"
+                      id="F4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      F4
+                    </button>
+                    <button
+                      onclick="clickEvent('G4')"
+                      id="G4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      G4
+                    </button>
+                    <button
+                      onclick="clickEvent('H4')"
+                      id="H4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      H4
+                    </button>
+                    <button
+                      onclick="clickEvent('I4')"
+                      id="I4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      I4
+                    </button>
+                    <button
+                      onclick="clickEvent('J4')"
+                      id="J4"
+                      class="btn w-[110px] h-[56px]"
+                    >
+                      J4
+                    </button>
                   </div>
                 </div>
               </div>
@@ -444,43 +686,58 @@
                     Seat
                     <span
                       class="bg-[rgb(29,209,0)] px-[8px] pt-[6px] rounded-[5px] text-white font-inter font-[700] text-[12px]"
-                      ><sup>2</sup></span
+                      ><sup id="booking_seat">0</sup></span
                     >
                   </h3>
                   <h3>Class</h3>
                   <h3>Price</h3>
                 </div>
-                <div class="flex flex-row justify-between py-4 px-8">
+                <div id="booking"></div>
+                <!-- <div class="flex flex-row justify-between py-4 px-8">
                   <p class="font-inter text-[rgba(3,7,18,0.6)]">C1</p>
                   <p class="font-inter text-[rgba(3,7,18,0.6)]">Economy</p>
                   <p class="font-inter text-[rgba(3,7,18,0.6)]">550</p>
-                </div>
-                <div class="flex flex-row justify-between py-4 px-8 border-b-2">
+                </div> -->
+                <!-- <div class="flex flex-row justify-between py-4 px-8 border-b-2">
                   <p class="font-inter text-[rgba(3,7,18,0.6)]">C2</p>
                   <p class="font-inter text-[rgba(3,7,18,0.6)]">Economy</p>
                   <p class="font-inter text-[rgba(3,7,18,0.6)]">550</p>
-                </div>
+                </div> -->
                 <div class="flex flex-row justify-between py-4 px-8">
                   <p class="font-inter text-[rgb(3,7,18)] font-[500]">Total</p>
-                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">1100</p>
+                  <p
+                    class="font-inter text-[rgb(3,7,18)] font-[500]"
+                    id="total_price"
+                  >
+                    0
+                  </p>
                 </div>
-                <div class="flex justify-center relative pb-6">
+                <div class="flex justify-center relative pb-6" id="coupon_div">
                   <div>
                     <input
                       class="w-[369px] p-[20px] bg-white rounded-xl font-inter text-[14px]"
                       type="text"
+                      id="coupon_code"
                       placeholder="Have Any Coupon"
                     />
                   </div>
                   <button
                     class="btn primary-btn absolute right-10 top-[8px] font-inter"
+                    onclick="applyCoupon('coupon_code')"
                   >
                     Apply
                   </button>
                 </div>
                 <div class="flex flex-row justify-between pb-8 px-8">
-                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">Total</p>
-                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">1100</p>
+                  <p class="font-inter text-[rgb(3,7,18)] font-[500]">
+                    Grand Total
+                  </p>
+                  <p
+                    class="font-inter text-[rgb(3,7,18)] font-[500]"
+                    id="grand_total"
+                  >
+                    0
+                  </p>
                 </div>
               </div>
               <!-- customer input -->
@@ -515,7 +772,7 @@
                   type="email"
                   placeholder="Enter your email id"
                 />
-                <button
+                <button onclick="buy()"
                   class="btn primary-btn w-full font-raleway font-[800] text-[20px] text-white"
                 >
                   Next
@@ -538,7 +795,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer" class="">
       <div class="w-1440px h-[457px] bg-[rgb(3,7,18)]">
         <div
           class="w-[1170px] flex flex-row justify-between mx-auto pt-[120px] border-b-2 border-dashed border-[rgba(255,255,255,0.3)] pb-12"
@@ -582,5 +839,24 @@
         </div>
       </div>
     </footer>
+    <!-- ticket-confirmed -->
+    <div id="done" class="h-[750px] w-full flex items-center justify-center bg-[rgb(242,241,241)] hidden">
+    <div class="h-[490px] w-[727px] border-4 border-dashed">
+      <div
+      class="h-[481px] w-[718px]  rounded-[16px] bg-[rgb(255,255,255)] text-center"
+    >
+      <div class="flex justify-center pt-[57px]"><img src="./images/success.png" alt="" /></div>
+      <h1 class="font[700] text-[24px] text-[rgb(39,174,96)]">SUCCESS</h1>
+      <p class="font-[500] text-[20px] text-[rgb(74,74,74)] pb-6">
+        Thank you for Booking Our Bus Seats. <br> We are working hard to find the
+        best service and deals for you.
+      </p>
+      <p class="font-[300] text-[20px] text-[rgb(74,74,74)] pb-[18px]">Shortly you will find a confirmation in
+        your email.</p>
+      <button class="btn text-white bg-[rgb(39,174,96)] rounded-[32px] font-[600] text-[20px] px-[50px] ">Continue</button>
+    </div>
+    </div>
+  </div>
+    <script src="./script/event.js"></script>
   </body>
 </html>
